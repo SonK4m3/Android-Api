@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout="@layout/fragment_1"
+    android:id="@+id/fragment_1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fragment 1"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:hint="text this"></EditText>
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:text="Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
