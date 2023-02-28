@@ -35,7 +35,11 @@
             android:label="Tablayout"
             android:theme="@style/Theme.AppCompat.Light"/>
         <activity android:name="retrofit.RetrofitActivity"
-            android:label="Retrofit Example"/>
+            android:label="Topic"/>
+        <activity android:name="retrofit.DisplayImageActivity"
+            android:label="Display Image"/>
+        <activity android:name="retrofit.SubmitImageActivity"
+            android:label="Meme Image"/>
     </application>
 
 </manifest>

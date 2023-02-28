@@ -5,6 +5,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import retrofit.DisplayImageActivity
+import retrofit.SubmitImageActivity
 import tablayout.TabLayoutActivity
 import viewpager2.ViewPage2Activity
 
@@ -19,6 +21,7 @@ class MainActivity: AppCompatActivity() {
         val btn4 = findViewById<Button>(R.id.btn4)
         val btn5 = findViewById<Button>(R.id.btn5)
         val btn6 = findViewById<Button>(R.id.btn6)
+        val btn7 = findViewById<Button>(R.id.btn7)
 
         btn1.setOnClickListener() {
             startActivity(Intent(this, FragmentDemoActivity::class.java))
@@ -37,6 +40,9 @@ class MainActivity: AppCompatActivity() {
         }
         btn6.setOnClickListener(){
             startActivity(Intent(this, RetrofitActivity::class.java))
+        }
+        btn7.setOnClickListener(){
+            startActivity(Intent(this, SubmitImageActivity::class.java))
         }
     }
 }
