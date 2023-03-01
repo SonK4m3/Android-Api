@@ -26,18 +26,7 @@ class SubmitImageActivity: AppCompatActivity() {
     val jsonData = """
         {
     "annotations": [
-        "Hinata",
-        "Humor",
-        "Naruto Kakashi",
-        "Anime Naruto",
-        "Naruto Pics",
-        "Thicc Anime",
-        "Hot Anime",
-        "Naruto Cute",
-        "Anime Guys",
-        "Anime Demon",
-        "Anime Characters",
-        "Character Design"
+        
     ],
         "face": {
         "boxH": "0.577102959156036",

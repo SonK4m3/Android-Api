@@ -1,11 +1,11 @@
 package com.example.myapplication
 
+import mvvm.Views.MVVMMainActivity
 import retrofit.RetrofitActivity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import retrofit.DisplayImageActivity
 import retrofit.SubmitImageActivity
 import tablayout.TabLayoutActivity
 import viewpager2.ViewPage2Activity
@@ -27,7 +27,7 @@ class MainActivity: AppCompatActivity() {
             startActivity(Intent(this, FragmentDemoActivity::class.java))
         }
         btn2.setOnClickListener(){
-            startActivity(Intent(this, ListViewDemoActivity::class.java))
+            startActivity(Intent(this, MVVMMainActivity::class.java))
         }
         btn3.setOnClickListener(){
             startActivity(Intent(this, RecycleViewActivity::class.java))

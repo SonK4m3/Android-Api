@@ -23,8 +23,6 @@
 
         <activity android:name=".FragmentDemoActivity"
             android:label="@string/app_name"/>
-        <activity android:name=".ListViewDemoActivity"
-            android:label="List View"/>
         <activity android:name=".RecycleViewActivity"
             android:label="RecycleViewer"
             android:theme="@style/Theme.AppCompat.Light"/>
@@ -40,6 +38,8 @@
             android:label="Display Image"/>
         <activity android:name="retrofit.SubmitImageActivity"
             android:label="Meme Image"/>
+        <activity android:name="mvvm.Views.MVVMMainActivity"
+            android:label="MVVM"/>
     </application>
 
 </manifest>
