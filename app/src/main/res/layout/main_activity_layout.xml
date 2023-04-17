@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/menu_ic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle_ic"
+            android:src="@drawable/ic_menu"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="12sp"
+            android:lineHeight="38sp"
+            android:text="Đoạn chat"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/camera_ic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/circle_ic"
+            android:src="@drawable/ic_camera"
+            android:visibility="visible"/>
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/edit_ic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle_ic"
+            android:src="@drawable/ic_edit"
+            android:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/phone_ic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle_ic"
+            android:src="@drawable/ic_phone"
+            android:visibility="gone"
+            android:layout_marginRight="12dp"/>
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/video_call_ic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle_ic"
+            android:src="@drawable/ic_video_call"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/contact_ic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle_ic"
+            android:src="@drawable/ic_contact"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tab_layout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark"
+        android:textAlignment="center"
+        app:tabTextColor="#A6A6AA"
+        app:tabMode="fixed"
+        android:nestedScrollingEnabled="false"
+        app:tabSelectedTextColor="@color/selected_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

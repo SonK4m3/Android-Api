@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/friend_avatar"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginLeft="6.5dp"
+        android:layout_marginRight="6.5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/circle" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivBorder"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/friend_avatar"
+        app:layout_constraintEnd_toEndOf="@+id/friend_avatar"
+        app:shapeAppearanceOverlay="@style/circle" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivOnline"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@color/online"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBorder"
+        app:layout_constraintEnd_toEndOf="@+id/ivBorder"
+        app:layout_constraintStart_toStartOf="@+id/ivBorder"
+        app:layout_constraintTop_toTopOf="@+id/ivBorder"
+        app:shapeAppearanceOverlay="@style/circle" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivOffline"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@color/gray"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBorder"
+        app:layout_constraintEnd_toEndOf="@+id/ivBorder"
+        app:layout_constraintStart_toStartOf="@+id/ivBorder"
+        app:layout_constraintTop_toTopOf="@+id/ivBorder"
+        app:shapeAppearanceOverlay="@style/circle" />
+
+    <TextView
+        android:id="@+id/friend_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lineHeight="18sp"
+        android:maxLines="1"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textColor="@color/text_v3"
+        android:textSize="13sp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friend_avatar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingTop="8dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="8dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/sivFriendImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/circle" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ivRead"
+        app:layout_constraintStart_toEndOf="@+id/sivFriendImage"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvFriendName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:lineHeight="22sp"
+            android:text="Martin Randolph"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:lineHeight="20sp"
+                android:text="You: What’s man!"
+                android:textColor="@color/text_v3"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineHeight="20sp"
+                android:text=" · 9:40 AM"
+                android:textColor="@color/text_v3"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivUnread"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_unread"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivRead"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_read"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivSeen"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_seen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
